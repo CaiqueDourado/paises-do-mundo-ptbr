@@ -1,0 +1,426 @@
+[
+  {
+    "name": "iso2",
+    "type": "string",
+    "description_en": "ISO 3166-1 alpha-2 code. Primary key.",
+    "description_pt": "Código ISO 3166-1 alfa-2. Chave primária.",
+    "standard": "ISO 3166-1",
+    "origin": "919Apps"
+  },
+  {
+    "name": "iso3",
+    "type": "string",
+    "description_en": "ISO 3166-1 alpha-3 code.",
+    "description_pt": "Código ISO 3166-1 alfa-3.",
+    "standard": "ISO 3166-1",
+    "origin": "919Apps"
+  },
+  {
+    "name": "iso_numeric",
+    "type": "string",
+    "description_en": "ISO 3166-1 numeric code, kept as text to preserve leading zeros (\"024\").",
+    "description_pt": "Código numérico ISO 3166-1, como texto para manter os zeros à esquerda (\"024\").",
+    "standard": "ISO 3166-1",
+    "origin": "enrichment"
+  },
+  {
+    "name": "ioc_code",
+    "type": "string",
+    "description_en": "International Olympic Committee code. Empty for territories without a National Olympic Committee.",
+    "description_pt": "Código do Comitê Olímpico Internacional. Vazio em territórios sem comitê olímpico próprio.",
+    "standard": "IOC",
+    "origin": "enrichment"
+  },
+  {
+    "name": "name_en",
+    "type": "string",
+    "description_en": "Short English name as used by the Apple App Store storefront list (e.g. \"Swaziland\", \"Korea, Republic Of\").",
+    "description_pt": "Nome curto em inglês como aparece na lista de lojas da App Store (ex.: \"Swaziland\", \"Korea, Republic Of\").",
+    "standard": "—",
+    "origin": "919Apps"
+  },
+  {
+    "name": "name_pt",
+    "type": "string",
+    "description_en": "Common name in Brazilian Portuguese.",
+    "description_pt": "Nome usual em português do Brasil.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "official_name_pt",
+    "type": "string",
+    "description_en": "Official long name in Portuguese.",
+    "description_pt": "Nome oficial completo em português.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "official_name_en",
+    "type": "string",
+    "description_en": "Official long name in English.",
+    "description_pt": "Nome oficial completo em inglês.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "native_name",
+    "type": "string",
+    "description_en": "Name in the main official language and script.",
+    "description_pt": "Nome no idioma e na escrita oficiais principais.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "flag_emoji",
+    "type": "string",
+    "description_en": "Flag emoji (pair of regional indicator symbols).",
+    "description_pt": "Emoji da bandeira (par de indicadores regionais).",
+    "standard": "Unicode",
+    "origin": "enrichment"
+  },
+  {
+    "name": "capital_en",
+    "type": "string",
+    "description_en": "Capital city in English. Several capitals are separated by \", \" (South Africa). Empty for Hong Kong and Macau.",
+    "description_pt": "Capital em inglês. Mais de uma capital vem separada por \", \" (África do Sul). Vazio para Hong Kong e Macau.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "continent_group",
+    "type": "string",
+    "description_en": "Grouping used on the 919Apps home page (Africa, America, Asia, Caribbean, Europe, Oceania…). Kept for compatibility; prefer un_region for analysis.",
+    "description_pt": "Agrupamento usado na home do 919Apps (Africa, America, Asia, Caribbean, Europe, Oceania…). Mantido por compatibilidade; para análise, prefira un_region.",
+    "standard": "—",
+    "origin": "919Apps"
+  },
+  {
+    "name": "continent_subgroup",
+    "type": "string",
+    "description_en": "Sub-grouping used on the 919Apps home page (South America, Eastern Europe…).",
+    "description_pt": "Subagrupamento usado na home do 919Apps (South America, Eastern Europe…).",
+    "standard": "—",
+    "origin": "919Apps"
+  },
+  {
+    "name": "un_region",
+    "type": "string",
+    "description_en": "UN M49 region: Africa, Americas, Asia, Europe, Oceania.",
+    "description_pt": "Região da ONU (M49): Africa, Americas, Asia, Europe, Oceania.",
+    "standard": "UN M49",
+    "origin": "enrichment"
+  },
+  {
+    "name": "un_subregion",
+    "type": "string",
+    "description_en": "UN M49 sub-region (e.g. Western Africa, South America).",
+    "description_pt": "Sub-região da ONU (M49), ex.: Western Africa, South America.",
+    "standard": "UN M49",
+    "origin": "enrichment"
+  },
+  {
+    "name": "latitude",
+    "type": "float",
+    "description_en": "Approximate latitude of the country's centre, decimal degrees.",
+    "description_pt": "Latitude aproximada do centro do país, em graus decimais.",
+    "standard": "WGS 84",
+    "origin": "enrichment"
+  },
+  {
+    "name": "longitude",
+    "type": "float",
+    "description_en": "Approximate longitude of the country's centre, decimal degrees.",
+    "description_pt": "Longitude aproximada do centro do país, em graus decimais.",
+    "standard": "WGS 84",
+    "origin": "enrichment"
+  },
+  {
+    "name": "area_km2",
+    "type": "integer",
+    "description_en": "Total area in km².",
+    "description_pt": "Área total em km².",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "population_millions",
+    "type": "float",
+    "description_en": "Approximate population in millions, circa 2024–2025.",
+    "description_pt": "População aproximada em milhões, cerca de 2024–2025.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "density_per_km2",
+    "type": "float",
+    "description_en": "Approximate inhabitants per km² (population / area).",
+    "description_pt": "Habitantes por km², aproximado (população / área).",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "landlocked",
+    "type": "boolean",
+    "description_en": "True when the country has no sea coast.",
+    "description_pt": "Verdadeiro quando o país não tem litoral.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "borders_iso3",
+    "type": "string (list)",
+    "description_en": "Land neighbours as ISO alpha-3 codes separated by \"|\". May reference countries outside this dataset; UNK = Kosovo.",
+    "description_pt": "Vizinhos por terra em códigos ISO alfa-3 separados por \"|\". Pode citar países fora desta base; UNK = Kosovo.",
+    "standard": "ISO 3166-1",
+    "origin": "enrichment"
+  },
+  {
+    "name": "border_count",
+    "type": "integer",
+    "description_en": "Number of land neighbours (length of borders_iso3).",
+    "description_pt": "Quantidade de vizinhos por terra (tamanho de borders_iso3).",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "independent",
+    "type": "boolean",
+    "description_en": "True for sovereign states; False for dependencies and special administrative regions.",
+    "description_pt": "Verdadeiro para Estados soberanos; falso para dependências e regiões administrativas especiais.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "un_member",
+    "type": "boolean",
+    "description_en": "True for UN member states.",
+    "description_pt": "Verdadeiro para membros da ONU.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "government_pt",
+    "type": "string",
+    "description_en": "System of government, in Portuguese.",
+    "description_pt": "Regime político, em português.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "state_form_pt",
+    "type": "string",
+    "description_en": "Form of state (Unitário, Federal, Dependência…), in Portuguese.",
+    "description_pt": "Forma de Estado (Unitário, Federal, Dependência…).",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "memberships_pt",
+    "type": "string (list)",
+    "description_en": "Blocs and organisations, separated by \"|\" (UE, Mercosul, OTAN, G20…).",
+    "description_pt": "Blocos e organizações, separados por \"|\" (UE, Mercosul, OTAN, G20…).",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "currency_codes",
+    "type": "string (list)",
+    "description_en": "ISO 4217 currency codes in use, separated by \"|\".",
+    "description_pt": "Códigos ISO 4217 das moedas em uso, separados por \"|\".",
+    "standard": "ISO 4217",
+    "origin": "enrichment"
+  },
+  {
+    "name": "currency_names_pt",
+    "type": "string (list)",
+    "description_en": "Currency names in Portuguese, same order as currency_codes.",
+    "description_pt": "Nomes das moedas em português, na mesma ordem de currency_codes.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "currency_symbols",
+    "type": "string (list)",
+    "description_en": "Local currency symbols, same order as currency_codes.",
+    "description_pt": "Símbolos locais das moedas, na mesma ordem de currency_codes.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "primary_language",
+    "type": "string",
+    "description_en": "Main language, ISO 639-1 (or 639-3 when there is no two-letter code).",
+    "description_pt": "Idioma principal, ISO 639-1 (ou 639-3 quando não existe código de duas letras).",
+    "standard": "ISO 639",
+    "origin": "919Apps, corrected"
+  },
+  {
+    "name": "official_languages_iso639_2",
+    "type": "string (list)",
+    "description_en": "Official languages as ISO 639-2/B codes, separated by \"|\".",
+    "description_pt": "Idiomas oficiais em códigos ISO 639-2/B, separados por \"|\".",
+    "standard": "ISO 639-2",
+    "origin": "919Apps, corrected"
+  },
+  {
+    "name": "official_languages_en",
+    "type": "string (list)",
+    "description_en": "Official and recognised languages, English names, separated by \"|\".",
+    "description_pt": "Idiomas oficiais e reconhecidos, com nomes em inglês, separados por \"|\".",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "locale",
+    "type": "string",
+    "description_en": "Suggested BCP 47 locale for the country (pt-BR, zh-Hant-HK…).",
+    "description_pt": "Locale BCP 47 sugerido para o país (pt-BR, zh-Hant-HK…).",
+    "standard": "BCP 47 / CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "writing_direction",
+    "type": "string",
+    "description_en": "Direction of the main language: ltr or rtl.",
+    "description_pt": "Direção da escrita do idioma principal: ltr ou rtl.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "has_rtl_official_language",
+    "type": "boolean",
+    "description_en": "True when at least one official language is written right-to-left.",
+    "description_pt": "Verdadeiro quando ao menos um idioma oficial é escrito da direita para a esquerda.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "timezones_iana",
+    "type": "string (list)",
+    "description_en": "IANA time zone identifiers, separated by \"|\".",
+    "description_pt": "Identificadores de fuso IANA, separados por \"|\".",
+    "standard": "IANA tzdb",
+    "origin": "enrichment"
+  },
+  {
+    "name": "utc_offset_count",
+    "type": "integer",
+    "description_en": "Number of distinct standard UTC offsets (not the number of IANA zones).",
+    "description_pt": "Quantidade de deslocamentos UTC padrão distintos (não é a quantidade de fusos IANA).",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "utc_offsets",
+    "type": "string",
+    "description_en": "Standard offset, or range \"UTC-05:00 a UTC-02:00\" when there are several.",
+    "description_pt": "Deslocamento padrão, ou intervalo \"UTC-05:00 a UTC-02:00\" quando há vários.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "observes_dst",
+    "type": "boolean",
+    "description_en": "True when daylight saving time is observed in at least part of the country.",
+    "description_pt": "Verdadeiro quando há horário de verão em ao menos parte do país.",
+    "standard": "IANA tzdb",
+    "origin": "enrichment"
+  },
+  {
+    "name": "calling_code",
+    "type": "string",
+    "description_en": "International calling code (+55).",
+    "description_pt": "Código telefônico internacional (+55).",
+    "standard": "ITU-T E.164",
+    "origin": "enrichment"
+  },
+  {
+    "name": "cctld",
+    "type": "string (list)",
+    "description_en": "Country code top-level domains, including internationalised ones, separated by \"|\".",
+    "description_pt": "Domínios de topo do país, inclusive os internacionalizados, separados por \"|\".",
+    "standard": "IANA root zone",
+    "origin": "enrichment"
+  },
+  {
+    "name": "demonym_en",
+    "type": "string",
+    "description_en": "Demonym in English.",
+    "description_pt": "Gentílico em inglês.",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "driving_side",
+    "type": "string",
+    "description_en": "Side of the road traffic drives on: right or left.",
+    "description_pt": "Mão de direção: right (direita) ou left (esquerda).",
+    "standard": "—",
+    "origin": "enrichment"
+  },
+  {
+    "name": "first_day_of_week",
+    "type": "string",
+    "description_en": "First day of the week in calendars: monday, sunday or saturday.",
+    "description_pt": "Primeiro dia da semana nos calendários: monday, sunday ou saturday.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "time_format",
+    "type": "string",
+    "description_en": "Usual clock: 12h or 24h.",
+    "description_pt": "Relógio usual: 12h ou 24h.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "short_date_pattern",
+    "type": "string",
+    "description_en": "Short date pattern for the locale (dd/MM/y).",
+    "description_pt": "Padrão de data curta do locale (dd/MM/y).",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "decimal_separator",
+    "type": "string",
+    "description_en": "Decimal separator: comma or period.",
+    "description_pt": "Separador decimal: comma (vírgula) ou period (ponto).",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "grouping_separator",
+    "type": "string",
+    "description_en": "Thousands separator: comma, period, space (U+00A0), narrow_space (U+202F) or apostrophe (’).",
+    "description_pt": "Separador de milhar: comma, period, space (U+00A0), narrow_space (U+202F) ou apostrophe (’).",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "measurement_system",
+    "type": "string",
+    "description_en": "metric, metric_with_imperial, us_customary_and_metric or us_customary.",
+    "description_pt": "metric, metric_with_imperial, us_customary_and_metric ou us_customary.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "paper_size",
+    "type": "string",
+    "description_en": "Default paper size: A4 or Letter.",
+    "description_pt": "Tamanho de papel padrão: A4 ou Letter.",
+    "standard": "CLDR",
+    "origin": "enrichment"
+  },
+  {
+    "name": "notes_pt",
+    "type": "string",
+    "description_en": "Notes in Portuguese (political status, geography, recent changes).",
+    "description_pt": "Observações em português (status político, geografia, mudanças recentes).",
+    "standard": "—",
+    "origin": "enrichment"
+  }
+]

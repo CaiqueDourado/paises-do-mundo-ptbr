@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Países do mundo (pt-BR): countries with codes, languages, currencies, time zones and locale formats"
+authors:
+  - family-names: Dourado
+    given-names: Caique
+version: 1.0.0
+date-released: 2026-10-15
+license: CC-BY-4.0
+repository-code: "https://github.com/CaiqueDourado/paises-do-mundo-ptbr"
+url: "https://www.kaggle.com/datasets/caiquedourado/paises-do-mundo-ptbr"
+keywords:
+  - countries
+  - paises
+  - iso-3166
+  - locale
+  - cldr
+  - portuguese

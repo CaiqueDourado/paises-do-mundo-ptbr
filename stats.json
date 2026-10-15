@@ -1,0 +1,332 @@
+{
+  "dataset": "paises-do-mundo-ptbr",
+  "rows": 167,
+  "columns": 53,
+  "by_un_region": {
+    "Africa": 41,
+    "Americas": 39,
+    "Asia": 39,
+    "Europe": 38,
+    "Oceania": 10
+  },
+  "fields": {
+    "iso2": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "iso3": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "iso_numeric": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "ioc_code": {
+      "dtype": "str",
+      "non_null": 163,
+      "null_pct": 2.4,
+      "distinct": 163
+    },
+    "name_en": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "name_pt": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "official_name_pt": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "official_name_en": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "native_name": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "flag_emoji": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "capital_en": {
+      "dtype": "str",
+      "non_null": 165,
+      "null_pct": 1.2,
+      "distinct": 165
+    },
+    "continent_group": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 9
+    },
+    "continent_subgroup": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 16
+    },
+    "un_region": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 5
+    },
+    "un_subregion": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 24
+    },
+    "latitude": {
+      "dtype": "float64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 127
+    },
+    "longitude": {
+      "dtype": "float64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 132
+    },
+    "area_km2": {
+      "dtype": "int64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "population_millions": {
+      "dtype": "float64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 148
+    },
+    "density_per_km2": {
+      "dtype": "float64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 164
+    },
+    "landlocked": {
+      "dtype": "bool",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "borders_iso3": {
+      "dtype": "str",
+      "non_null": 129,
+      "null_pct": 22.75,
+      "distinct": 127
+    },
+    "border_count": {
+      "dtype": "int64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 13
+    },
+    "independent": {
+      "dtype": "bool",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "un_member": {
+      "dtype": "bool",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "government_pt": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 38
+    },
+    "state_form_pt": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 5
+    },
+    "memberships_pt": {
+      "dtype": "str",
+      "non_null": 133,
+      "null_pct": 20.36,
+      "distinct": 45
+    },
+    "currency_codes": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 124
+    },
+    "currency_names_pt": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 124
+    },
+    "currency_symbols": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 83
+    },
+    "primary_language": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 55
+    },
+    "official_languages_iso639_2": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 85
+    },
+    "official_languages_en": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 96
+    },
+    "locale": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "writing_direction": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "has_rtl_official_language": {
+      "dtype": "bool",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "timezones_iana": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "utc_offset_count": {
+      "dtype": "int64",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 7
+    },
+    "utc_offsets": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 37
+    },
+    "observes_dst": {
+      "dtype": "bool",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "calling_code": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 148
+    },
+    "cctld": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 167
+    },
+    "demonym_en": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 165
+    },
+    "driving_side": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "first_day_of_week": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 3
+    },
+    "time_format": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "short_date_pattern": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 28
+    },
+    "decimal_separator": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "grouping_separator": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 5
+    },
+    "measurement_system": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 4
+    },
+    "paper_size": {
+      "dtype": "str",
+      "non_null": 167,
+      "null_pct": 0.0,
+      "distinct": 2
+    },
+    "notes_pt": {
+      "dtype": "str",
+      "non_null": 27,
+      "null_pct": 83.83,
+      "distinct": 20
+    }
+  }
+}

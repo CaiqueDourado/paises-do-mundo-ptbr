@@ -1,0 +1,39 @@
+{
+  "slug": "paises-do-mundo-ptbr",
+  "title": "Countries of the world (pt-BR): codes, languages, currencies, time zones and locale formats",
+  "title_pt": "Países do mundo: códigos, idiomas, moedas, fusos e formatos regionais",
+  "kaggle_user": "caiquedourado",
+  "kaggle_title": "Países do Mundo / Countries of the World (pt-BR)",
+  "kaggle_subtitle": "167 countries x 53 fields: ISO codes, PT names, languages, currencies, locales",
+  "kaggle_description_file": "docs/kaggle-description.md",
+  "kaggle_license": "CC-BY-4.0",
+  "keywords": [
+    "geography",
+    "countries",
+    "languages",
+    "brazil",
+    "tabular"
+  ],
+  "tables": [
+    {
+      "file": "paises.csv",
+      "json": true,
+      "description": "One row per country or territory (167): codes, names in Portuguese and English, regions, borders, currencies, languages, locale formats and time zones.",
+      "description_pt": "Uma linha por país ou território (167): códigos, nomes em português e inglês, regiões, fronteiras, moedas, idiomas, formatos regionais e fusos horários."
+    }
+  ],
+  "conventions": [
+    "- Encoding UTF-8 without BOM, comma separated, header in the first line, `\\n` line endings.",
+    "- Lists inside a cell use `|` as separator (`MNE|GRC|MKD`). Commas inside values are never used as separators.",
+    "- Booleans are `True` / `False`. Empty cell = unknown or not applicable.",
+    "- Decimal point is `.`; no thousands separator.",
+    "- Text values that are labels for readers are in Portuguese (`*_pt`); technical enumerations are lowercase English codes (`ltr`, `monday`)."
+  ],
+  "conventions_pt": [
+    "- Codificação UTF-8 sem BOM, separador vírgula, cabeçalho na primeira linha, quebra de linha `\\n`.",
+    "- Listas dentro de uma célula usam `|` como separador (`MNE|GRC|MKD`). Vírgula nunca separa itens.",
+    "- Booleanos são `True` / `False`. Célula vazia = desconhecido ou não se aplica.",
+    "- Separador decimal é o ponto `.`, sem separador de milhar.",
+    "- Textos para leitura estão em português (`*_pt`); enumerações técnicas são códigos em inglês minúsculo (`ltr`, `monday`)."
+  ]
+}
