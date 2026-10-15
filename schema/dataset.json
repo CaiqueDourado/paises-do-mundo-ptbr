@@ -6,13 +6,8 @@
   "kaggle_title": "Países do Mundo / Countries of the World (pt-BR)",
   "kaggle_subtitle": "167 countries x 53 fields: ISO codes, PT names, languages, currencies, locales",
   "kaggle_description_file": "docs/kaggle-description.md",
-  "kaggle_license": "CC-BY-4.0",
+  "kaggle_license": "other",
   "keywords": [
-    "geography",
-    "countries",
-    "languages",
-    "brazil",
-    "tabular"
   ],
   "tables": [
     {

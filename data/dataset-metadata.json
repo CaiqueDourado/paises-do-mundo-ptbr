@@ -5,16 +5,10 @@
   "id": "caiquedourado/paises-do-mundo-ptbr",
   "licenses": [
     {
-      "name": "CC-BY-4.0"
+      "name": "other"
     }
   ],
-  "keywords": [
-    "geography",
-    "countries",
-    "languages",
-    "brazil",
-    "tabular"
-  ],
+  "keywords": [],
   "resources": [
     {
       "path": "paises.csv",
