@@ -1,7 +1,7 @@
 {
-  "title": "Países do Mundo / Countries of the World (pt-BR)",
+  "title": "Pa\u00edses do Mundo / Countries of the World (pt-BR)",
   "subtitle": "167 countries x 53 fields: ISO codes, PT names, languages, currencies, locales",
-  "description": "**Países do mundo** com códigos, nomes em português, idiomas, moedas, fusos horários e formatos regionais. **Countries of the world** with ISO codes, Portuguese names, languages, currencies, time zones and locale formats.\n\n167 countries and territories × 53 typed columns, built for software that needs to localise content: which locale to use, how to format dates and numbers, which currency and calling code apply, which day starts the week, whether text runs right to left.\n\n## What is inside\n\n- **Codes:** ISO 3166-1 alpha-2, alpha-3 and numeric, IOC code, calling code, ccTLDs (including internationalised ones).\n- **Names:** Brazilian Portuguese common and official names, English official name, native name, flag emoji, capital, demonym.\n- **Geography:** UN M49 region and sub-region, approximate centre, area, population (circa 2024–2025), density, landlocked flag, land borders.\n- **Politics:** independence, UN membership, system of government, form of state, blocs (EU, Mercosur, NATO, G20…).\n- **Languages and locale:** main language, official languages, BCP 47 locale, writing direction, first day of the week, 12/24h clock, short date pattern, decimal and thousands separators, measurement system, paper size.\n- **Time:** IANA time zones, number of UTC offsets, daylight saving time.\n- **Money:** ISO 4217 codes, names in Portuguese, symbols.\n\n## Files\n\n- `paises.csv`: UTF-8, comma separated; lists inside a cell use `|`.\n- `paises.parquet`: same data with types (booleans, integers, floats).\n- `paises.json`: array of records.\n\n## Origin and quality\n\nThe country list comes from a 2021 App Store catalog (167 storefronts). It was enriched following ISO, UN M49, Unicode CLDR and IANA standards, then validated: ISO codes, border symmetry, density, locale consistency. Eighteen classes of errors found in the original data were fixed and documented.\n\nFull data dictionary, methodology, quality report and the build/validation scripts: **https://github.com/CaiqueDourado/paises-do-mundo-ptbr**\n\nLicense: CC BY 4.0. Author: Caique Dourado.\n",
+  "description": "**Pa\u00edses do mundo** com c\u00f3digos, nomes em portugu\u00eas, idiomas, moedas, fusos hor\u00e1rios e formatos regionais. **Countries of the world** with ISO codes, Portuguese names, languages, currencies, time zones and locale formats.\n\n167 countries and territories \u00d7 53 typed columns, built for software that needs to localise content: which locale to use, how to format dates and numbers, which currency and calling code apply, which day starts the week, whether text runs right to left.\n\n## What is inside\n\n- **Codes:** ISO 3166-1 alpha-2, alpha-3 and numeric, IOC code, calling code, ccTLDs (including internationalised ones).\n- **Names:** Brazilian Portuguese common and official names, English official name, native name, flag emoji, capital, demonym.\n- **Geography:** UN M49 region and sub-region, approximate centre, area, population (circa 2024\u20132025), density, landlocked flag, land borders.\n- **Politics:** independence, UN membership, system of government, form of state, blocs (EU, Mercosur, NATO, G20\u2026).\n- **Languages and locale:** main language, official languages, BCP 47 locale, writing direction, first day of the week, 12/24h clock, short date pattern, decimal and thousands separators, measurement system, paper size.\n- **Time:** IANA time zones, number of UTC offsets, daylight saving time.\n- **Money:** ISO 4217 codes, names in Portuguese, symbols.\n\n## Files\n\n- `paises.csv`: UTF-8, comma separated; lists inside a cell use `|`.\n- `paises.parquet`: same data with types (booleans, integers, floats).\n- `paises.json`: array of records.\n\n## Origin and quality\n\nThe country list comes from a 2021 App Store catalog (167 storefronts). It was enriched following ISO, UN M49, Unicode CLDR and IANA standards, then validated: ISO codes, border symmetry, density, locale consistency. Eighteen classes of errors found in the original data were fixed and documented.\n\nFull data dictionary, methodology, quality report and the build/validation scripts: **https://github.com/CaiqueDourado/paises-do-mundo-ptbr**\n\nLicense: CC BY 4.0. Author: Caique Dourado.\n",
   "id": "caiquedourado/paises-do-mundo-ptbr",
   "licenses": [
     {
@@ -72,12 +72,12 @@
           },
           {
             "name": "continent_group",
-            "description": "Grouping used on the 919Apps home page (Africa, America, Asia, Caribbean, Europe, Oceania…). Kept for compatibility; prefer un_region for analysis.",
+            "description": "Grouping used on the 919Apps home page (Africa, America, Asia, Caribbean, Europe, Oceania\u2026). Kept for compatibility; prefer un_region for analysis.",
             "type": "string"
           },
           {
             "name": "continent_subgroup",
-            "description": "Sub-grouping used on the 919Apps home page (South America, Eastern Europe…).",
+            "description": "Sub-grouping used on the 919Apps home page (South America, Eastern Europe\u2026).",
             "type": "string"
           },
           {
@@ -102,17 +102,17 @@
           },
           {
             "name": "area_km2",
-            "description": "Total area in km².",
+            "description": "Total area in km\u00b2.",
             "type": "integer"
           },
           {
             "name": "population_millions",
-            "description": "Approximate population in millions, circa 2024–2025.",
+            "description": "Approximate population in millions, circa 2024\u20132025.",
             "type": "number"
           },
           {
             "name": "density_per_km2",
-            "description": "Approximate inhabitants per km² (population / area).",
+            "description": "Approximate inhabitants per km\u00b2 (population / area).",
             "type": "number"
           },
           {
@@ -147,12 +147,12 @@
           },
           {
             "name": "state_form_pt",
-            "description": "Form of state (Unitário, Federal, Dependência…), in Portuguese.",
+            "description": "Form of state (Unit\u00e1rio, Federal, Depend\u00eancia\u2026), in Portuguese.",
             "type": "string"
           },
           {
             "name": "memberships_pt",
-            "description": "Blocs and organisations, separated by \"|\" (UE, Mercosul, OTAN, G20…).",
+            "description": "Blocs and organisations, separated by \"|\" (UE, Mercosul, OTAN, G20\u2026).",
             "type": "string"
           },
           {
@@ -187,7 +187,7 @@
           },
           {
             "name": "locale",
-            "description": "Suggested BCP 47 locale for the country (pt-BR, zh-Hant-HK…).",
+            "description": "Suggested BCP 47 locale for the country (pt-BR, zh-Hant-HK\u2026).",
             "type": "string"
           },
           {
@@ -262,7 +262,7 @@
           },
           {
             "name": "grouping_separator",
-            "description": "Thousands separator: comma, period, space (U+00A0), narrow_space (U+202F) or apostrophe (’).",
+            "description": "Thousands separator: comma, period, space (U+00A0), narrow_space (U+202F) or apostrophe (\u2019).",
             "type": "string"
           },
           {
