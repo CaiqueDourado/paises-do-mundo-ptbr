@@ -8,6 +8,10 @@
   "kaggle_description_file": "docs/kaggle-description.md",
   "kaggle_license": "other",
   "keywords": [
+    "tabular",
+    "data cleaning",
+    "geography",
+    "languages"
   ],
   "tables": [
     {

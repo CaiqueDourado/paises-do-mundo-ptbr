@@ -1,14 +1,19 @@
 {
   "title": "Pa\u00edses do Mundo / Countries of the World (pt-BR)",
   "subtitle": "167 countries x 53 fields: ISO codes, PT names, languages, currencies, locales",
-  "description": "**Pa\u00edses do mundo** com c\u00f3digos, nomes em portugu\u00eas, idiomas, moedas, fusos hor\u00e1rios e formatos regionais. **Countries of the world** with ISO codes, Portuguese names, languages, currencies, time zones and locale formats.\n\n167 countries and territories \u00d7 53 typed columns, built for software that needs to localise content: which locale to use, how to format dates and numbers, which currency and calling code apply, which day starts the week, whether text runs right to left.\n\n## What is inside\n\n- **Codes:** ISO 3166-1 alpha-2, alpha-3 and numeric, IOC code, calling code, ccTLDs (including internationalised ones).\n- **Names:** Brazilian Portuguese common and official names, English official name, native name, flag emoji, capital, demonym.\n- **Geography:** UN M49 region and sub-region, approximate centre, area, population (circa 2024\u20132025), density, landlocked flag, land borders.\n- **Politics:** independence, UN membership, system of government, form of state, blocs (EU, Mercosur, NATO, G20\u2026).\n- **Languages and locale:** main language, official languages, BCP 47 locale, writing direction, first day of the week, 12/24h clock, short date pattern, decimal and thousands separators, measurement system, paper size.\n- **Time:** IANA time zones, number of UTC offsets, daylight saving time.\n- **Money:** ISO 4217 codes, names in Portuguese, symbols.\n\n## Files\n\n- `paises.csv`: UTF-8, comma separated; lists inside a cell use `|`.\n- `paises.parquet`: same data with types (booleans, integers, floats).\n- `paises.json`: array of records.\n\n## Origin and quality\n\nThe country list comes from a 2021 App Store catalog (167 storefronts). It was enriched following ISO, UN M49, Unicode CLDR and IANA standards, then validated: ISO codes, border symmetry, density, locale consistency. Eighteen classes of errors found in the original data were fixed and documented.\n\nFull data dictionary, methodology, quality report and the build/validation scripts: **https://github.com/CaiqueDourado/paises-do-mundo-ptbr**\n\nLicense: CC BY 4.0. Author: Caique Dourado.\n",
+  "description": "**Pa\u00edses do mundo** com c\u00f3digos, nomes em portugu\u00eas, idiomas, moedas, fusos hor\u00e1rios e formatos regionais. **Countries of the world** with ISO codes, Portuguese names, languages, currencies, time zones and locale formats.\n\n167 countries and territories \u00d7 53 typed columns, built for software that needs to localise content: which locale to use, how to format dates and numbers, which currency and calling code apply, which day starts the week, whether text runs right to left.\n\n## What is inside\n\n- **Codes:** ISO 3166-1 alpha-2, alpha-3 and numeric, IOC code, calling code, ccTLDs (including internationalised ones).\n- **Names:** Brazilian Portuguese common and official names, English official name, native name, flag emoji, capital, demonym.\n- **Geography:** UN M49 region and sub-region, approximate centre, area, population (circa 2024\u20132025), density, landlocked flag, land borders.\n- **Politics:** independence, UN membership, system of government, form of state, blocs (EU, Mercosur, NATO, G20\u2026).\n- **Languages and locale:** main language, official languages, BCP 47 locale, writing direction, first day of the week, 12/24h clock, short date pattern, decimal and thousands separators, measurement system, paper size.\n- **Time:** IANA time zones, number of UTC offsets, daylight saving time.\n- **Money:** ISO 4217 codes, names in Portuguese, symbols.\n\n## Files\n\n- `paises.csv`: UTF-8, comma separated; lists inside a cell use `|`.\n- `paises.parquet`: same data with types (booleans, integers, floats).\n- `paises.json`: array of records.\n\n## Origin and quality\n\nThe country list comes from [919Apps](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule), a 2021 App Store catalog by the author (167 storefronts). It was enriched following ISO, UN M49, Unicode CLDR and IANA standards, then validated: ISO codes, border symmetry, density, locale consistency. Eighteen classes of errors found in the original data were fixed and documented.\n\nFull data dictionary, methodology, quality report and the build/validation scripts: **https://github.com/CaiqueDourado/paises-do-mundo-ptbr**\n\nLicense: CC BY 4.0. Author: Caique Dourado.\n",
   "id": "caiquedourado/paises-do-mundo-ptbr",
   "licenses": [
     {
       "name": "other"
     }
   ],
-  "keywords": [],
+  "keywords": [
+    "tabular",
+    "data cleaning",
+    "geography",
+    "languages"
+  ],
   "resources": [
     {
       "path": "paises.csv",
@@ -285,11 +290,549 @@
     },
     {
       "path": "paises.parquet",
-      "description": "One row per country or territory (167): codes, names in Portuguese and English, regions, borders, currencies, languages, locale formats and time zones (Parquet, typed)."
+      "description": "One row per country or territory (167): codes, names in Portuguese and English, regions, borders, currencies, languages, locale formats and time zones (Parquet, typed).",
+      "schema": {
+        "fields": [
+          {
+            "name": "iso2",
+            "description": "ISO 3166-1 alpha-2 code. Primary key.",
+            "type": "string"
+          },
+          {
+            "name": "iso3",
+            "description": "ISO 3166-1 alpha-3 code.",
+            "type": "string"
+          },
+          {
+            "name": "iso_numeric",
+            "description": "ISO 3166-1 numeric code, kept as text to preserve leading zeros (\"024\").",
+            "type": "string"
+          },
+          {
+            "name": "ioc_code",
+            "description": "International Olympic Committee code. Empty for territories without a National Olympic Committee.",
+            "type": "string"
+          },
+          {
+            "name": "name_en",
+            "description": "Short English name as used by the Apple App Store storefront list (e.g. \"Swaziland\", \"Korea, Republic Of\").",
+            "type": "string"
+          },
+          {
+            "name": "name_pt",
+            "description": "Common name in Brazilian Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "official_name_pt",
+            "description": "Official long name in Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "official_name_en",
+            "description": "Official long name in English.",
+            "type": "string"
+          },
+          {
+            "name": "native_name",
+            "description": "Name in the main official language and script.",
+            "type": "string"
+          },
+          {
+            "name": "flag_emoji",
+            "description": "Flag emoji (pair of regional indicator symbols).",
+            "type": "string"
+          },
+          {
+            "name": "capital_en",
+            "description": "Capital city in English. Several capitals are separated by \", \" (South Africa). Empty for Hong Kong and Macau.",
+            "type": "string"
+          },
+          {
+            "name": "continent_group",
+            "description": "Grouping used on the 919Apps home page (Africa, America, Asia, Caribbean, Europe, Oceania\u2026). Kept for compatibility; prefer un_region for analysis.",
+            "type": "string"
+          },
+          {
+            "name": "continent_subgroup",
+            "description": "Sub-grouping used on the 919Apps home page (South America, Eastern Europe\u2026).",
+            "type": "string"
+          },
+          {
+            "name": "un_region",
+            "description": "UN M49 region: Africa, Americas, Asia, Europe, Oceania.",
+            "type": "string"
+          },
+          {
+            "name": "un_subregion",
+            "description": "UN M49 sub-region (e.g. Western Africa, South America).",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "description": "Approximate latitude of the country's centre, decimal degrees.",
+            "type": "number"
+          },
+          {
+            "name": "longitude",
+            "description": "Approximate longitude of the country's centre, decimal degrees.",
+            "type": "number"
+          },
+          {
+            "name": "area_km2",
+            "description": "Total area in km\u00b2.",
+            "type": "integer"
+          },
+          {
+            "name": "population_millions",
+            "description": "Approximate population in millions, circa 2024\u20132025.",
+            "type": "number"
+          },
+          {
+            "name": "density_per_km2",
+            "description": "Approximate inhabitants per km\u00b2 (population / area).",
+            "type": "number"
+          },
+          {
+            "name": "landlocked",
+            "description": "True when the country has no sea coast.",
+            "type": "boolean"
+          },
+          {
+            "name": "borders_iso3",
+            "description": "Land neighbours as ISO alpha-3 codes separated by \"|\". May reference countries outside this dataset; UNK = Kosovo.",
+            "type": "string"
+          },
+          {
+            "name": "border_count",
+            "description": "Number of land neighbours (length of borders_iso3).",
+            "type": "integer"
+          },
+          {
+            "name": "independent",
+            "description": "True for sovereign states; False for dependencies and special administrative regions.",
+            "type": "boolean"
+          },
+          {
+            "name": "un_member",
+            "description": "True for UN member states.",
+            "type": "boolean"
+          },
+          {
+            "name": "government_pt",
+            "description": "System of government, in Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "state_form_pt",
+            "description": "Form of state (Unit\u00e1rio, Federal, Depend\u00eancia\u2026), in Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "memberships_pt",
+            "description": "Blocs and organisations, separated by \"|\" (UE, Mercosul, OTAN, G20\u2026).",
+            "type": "string"
+          },
+          {
+            "name": "currency_codes",
+            "description": "ISO 4217 currency codes in use, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "currency_names_pt",
+            "description": "Currency names in Portuguese, same order as currency_codes.",
+            "type": "string"
+          },
+          {
+            "name": "currency_symbols",
+            "description": "Local currency symbols, same order as currency_codes.",
+            "type": "string"
+          },
+          {
+            "name": "primary_language",
+            "description": "Main language, ISO 639-1 (or 639-3 when there is no two-letter code).",
+            "type": "string"
+          },
+          {
+            "name": "official_languages_iso639_2",
+            "description": "Official languages as ISO 639-2/B codes, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "official_languages_en",
+            "description": "Official and recognised languages, English names, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "locale",
+            "description": "Suggested BCP 47 locale for the country (pt-BR, zh-Hant-HK\u2026).",
+            "type": "string"
+          },
+          {
+            "name": "writing_direction",
+            "description": "Direction of the main language: ltr or rtl.",
+            "type": "string"
+          },
+          {
+            "name": "has_rtl_official_language",
+            "description": "True when at least one official language is written right-to-left.",
+            "type": "boolean"
+          },
+          {
+            "name": "timezones_iana",
+            "description": "IANA time zone identifiers, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "utc_offset_count",
+            "description": "Number of distinct standard UTC offsets (not the number of IANA zones).",
+            "type": "integer"
+          },
+          {
+            "name": "utc_offsets",
+            "description": "Standard offset, or range \"UTC-05:00 a UTC-02:00\" when there are several.",
+            "type": "string"
+          },
+          {
+            "name": "observes_dst",
+            "description": "True when daylight saving time is observed in at least part of the country.",
+            "type": "boolean"
+          },
+          {
+            "name": "calling_code",
+            "description": "International calling code (+55).",
+            "type": "string"
+          },
+          {
+            "name": "cctld",
+            "description": "Country code top-level domains, including internationalised ones, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "demonym_en",
+            "description": "Demonym in English.",
+            "type": "string"
+          },
+          {
+            "name": "driving_side",
+            "description": "Side of the road traffic drives on: right or left.",
+            "type": "string"
+          },
+          {
+            "name": "first_day_of_week",
+            "description": "First day of the week in calendars: monday, sunday or saturday.",
+            "type": "string"
+          },
+          {
+            "name": "time_format",
+            "description": "Usual clock: 12h or 24h.",
+            "type": "string"
+          },
+          {
+            "name": "short_date_pattern",
+            "description": "Short date pattern for the locale (dd/MM/y).",
+            "type": "string"
+          },
+          {
+            "name": "decimal_separator",
+            "description": "Decimal separator: comma or period.",
+            "type": "string"
+          },
+          {
+            "name": "grouping_separator",
+            "description": "Thousands separator: comma, period, space (U+00A0), narrow_space (U+202F) or apostrophe (\u2019).",
+            "type": "string"
+          },
+          {
+            "name": "measurement_system",
+            "description": "metric, metric_with_imperial, us_customary_and_metric or us_customary.",
+            "type": "string"
+          },
+          {
+            "name": "paper_size",
+            "description": "Default paper size: A4 or Letter.",
+            "type": "string"
+          },
+          {
+            "name": "notes_pt",
+            "description": "Notes in Portuguese (political status, geography, recent changes).",
+            "type": "string"
+          }
+        ]
+      }
     },
     {
       "path": "paises.json",
-      "description": "One row per country or territory (167): codes, names in Portuguese and English, regions, borders, currencies, languages, locale formats and time zones (JSON)."
+      "description": "One row per country or territory (167): codes, names in Portuguese and English, regions, borders, currencies, languages, locale formats and time zones (JSON).",
+      "schema": {
+        "fields": [
+          {
+            "name": "iso2",
+            "description": "ISO 3166-1 alpha-2 code. Primary key.",
+            "type": "string"
+          },
+          {
+            "name": "iso3",
+            "description": "ISO 3166-1 alpha-3 code.",
+            "type": "string"
+          },
+          {
+            "name": "iso_numeric",
+            "description": "ISO 3166-1 numeric code, kept as text to preserve leading zeros (\"024\").",
+            "type": "string"
+          },
+          {
+            "name": "ioc_code",
+            "description": "International Olympic Committee code. Empty for territories without a National Olympic Committee.",
+            "type": "string"
+          },
+          {
+            "name": "name_en",
+            "description": "Short English name as used by the Apple App Store storefront list (e.g. \"Swaziland\", \"Korea, Republic Of\").",
+            "type": "string"
+          },
+          {
+            "name": "name_pt",
+            "description": "Common name in Brazilian Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "official_name_pt",
+            "description": "Official long name in Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "official_name_en",
+            "description": "Official long name in English.",
+            "type": "string"
+          },
+          {
+            "name": "native_name",
+            "description": "Name in the main official language and script.",
+            "type": "string"
+          },
+          {
+            "name": "flag_emoji",
+            "description": "Flag emoji (pair of regional indicator symbols).",
+            "type": "string"
+          },
+          {
+            "name": "capital_en",
+            "description": "Capital city in English. Several capitals are separated by \", \" (South Africa). Empty for Hong Kong and Macau.",
+            "type": "string"
+          },
+          {
+            "name": "continent_group",
+            "description": "Grouping used on the 919Apps home page (Africa, America, Asia, Caribbean, Europe, Oceania\u2026). Kept for compatibility; prefer un_region for analysis.",
+            "type": "string"
+          },
+          {
+            "name": "continent_subgroup",
+            "description": "Sub-grouping used on the 919Apps home page (South America, Eastern Europe\u2026).",
+            "type": "string"
+          },
+          {
+            "name": "un_region",
+            "description": "UN M49 region: Africa, Americas, Asia, Europe, Oceania.",
+            "type": "string"
+          },
+          {
+            "name": "un_subregion",
+            "description": "UN M49 sub-region (e.g. Western Africa, South America).",
+            "type": "string"
+          },
+          {
+            "name": "latitude",
+            "description": "Approximate latitude of the country's centre, decimal degrees.",
+            "type": "number"
+          },
+          {
+            "name": "longitude",
+            "description": "Approximate longitude of the country's centre, decimal degrees.",
+            "type": "number"
+          },
+          {
+            "name": "area_km2",
+            "description": "Total area in km\u00b2.",
+            "type": "integer"
+          },
+          {
+            "name": "population_millions",
+            "description": "Approximate population in millions, circa 2024\u20132025.",
+            "type": "number"
+          },
+          {
+            "name": "density_per_km2",
+            "description": "Approximate inhabitants per km\u00b2 (population / area).",
+            "type": "number"
+          },
+          {
+            "name": "landlocked",
+            "description": "True when the country has no sea coast.",
+            "type": "boolean"
+          },
+          {
+            "name": "borders_iso3",
+            "description": "Land neighbours as ISO alpha-3 codes separated by \"|\". May reference countries outside this dataset; UNK = Kosovo.",
+            "type": "string"
+          },
+          {
+            "name": "border_count",
+            "description": "Number of land neighbours (length of borders_iso3).",
+            "type": "integer"
+          },
+          {
+            "name": "independent",
+            "description": "True for sovereign states; False for dependencies and special administrative regions.",
+            "type": "boolean"
+          },
+          {
+            "name": "un_member",
+            "description": "True for UN member states.",
+            "type": "boolean"
+          },
+          {
+            "name": "government_pt",
+            "description": "System of government, in Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "state_form_pt",
+            "description": "Form of state (Unit\u00e1rio, Federal, Depend\u00eancia\u2026), in Portuguese.",
+            "type": "string"
+          },
+          {
+            "name": "memberships_pt",
+            "description": "Blocs and organisations, separated by \"|\" (UE, Mercosul, OTAN, G20\u2026).",
+            "type": "string"
+          },
+          {
+            "name": "currency_codes",
+            "description": "ISO 4217 currency codes in use, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "currency_names_pt",
+            "description": "Currency names in Portuguese, same order as currency_codes.",
+            "type": "string"
+          },
+          {
+            "name": "currency_symbols",
+            "description": "Local currency symbols, same order as currency_codes.",
+            "type": "string"
+          },
+          {
+            "name": "primary_language",
+            "description": "Main language, ISO 639-1 (or 639-3 when there is no two-letter code).",
+            "type": "string"
+          },
+          {
+            "name": "official_languages_iso639_2",
+            "description": "Official languages as ISO 639-2/B codes, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "official_languages_en",
+            "description": "Official and recognised languages, English names, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "locale",
+            "description": "Suggested BCP 47 locale for the country (pt-BR, zh-Hant-HK\u2026).",
+            "type": "string"
+          },
+          {
+            "name": "writing_direction",
+            "description": "Direction of the main language: ltr or rtl.",
+            "type": "string"
+          },
+          {
+            "name": "has_rtl_official_language",
+            "description": "True when at least one official language is written right-to-left.",
+            "type": "boolean"
+          },
+          {
+            "name": "timezones_iana",
+            "description": "IANA time zone identifiers, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "utc_offset_count",
+            "description": "Number of distinct standard UTC offsets (not the number of IANA zones).",
+            "type": "integer"
+          },
+          {
+            "name": "utc_offsets",
+            "description": "Standard offset, or range \"UTC-05:00 a UTC-02:00\" when there are several.",
+            "type": "string"
+          },
+          {
+            "name": "observes_dst",
+            "description": "True when daylight saving time is observed in at least part of the country.",
+            "type": "boolean"
+          },
+          {
+            "name": "calling_code",
+            "description": "International calling code (+55).",
+            "type": "string"
+          },
+          {
+            "name": "cctld",
+            "description": "Country code top-level domains, including internationalised ones, separated by \"|\".",
+            "type": "string"
+          },
+          {
+            "name": "demonym_en",
+            "description": "Demonym in English.",
+            "type": "string"
+          },
+          {
+            "name": "driving_side",
+            "description": "Side of the road traffic drives on: right or left.",
+            "type": "string"
+          },
+          {
+            "name": "first_day_of_week",
+            "description": "First day of the week in calendars: monday, sunday or saturday.",
+            "type": "string"
+          },
+          {
+            "name": "time_format",
+            "description": "Usual clock: 12h or 24h.",
+            "type": "string"
+          },
+          {
+            "name": "short_date_pattern",
+            "description": "Short date pattern for the locale (dd/MM/y).",
+            "type": "string"
+          },
+          {
+            "name": "decimal_separator",
+            "description": "Decimal separator: comma or period.",
+            "type": "string"
+          },
+          {
+            "name": "grouping_separator",
+            "description": "Thousands separator: comma, period, space (U+00A0), narrow_space (U+202F) or apostrophe (\u2019).",
+            "type": "string"
+          },
+          {
+            "name": "measurement_system",
+            "description": "metric, metric_with_imperial, us_customary_and_metric or us_customary.",
+            "type": "string"
+          },
+          {
+            "name": "paper_size",
+            "description": "Default paper size: A4 or Letter.",
+            "type": "string"
+          },
+          {
+            "name": "notes_pt",
+            "description": "Notes in Portuguese (political status, geography, recent changes).",
+            "type": "string"
+          }
+        ]
+      }
     }
   ]
 }
