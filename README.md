@@ -59,9 +59,11 @@ Every column is described in the **[data dictionary](docs/data-dictionary.md)** 
 
 ## How it was built
 
-The country list was born in **919Apps** (2021), a programmatic catalog of 2.4 million apps generated from the Apple Enterprise Partner Feed and localised for every App Store storefront with .NET `CultureInfo` and `RegionInfo`. That is why it has 167 entries: the storefronts, not every country in the world.
+The country list was born in **[919Apps](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule)** (2021), a programmatic catalog of 2.4 million apps generated from the Apple Enterprise Partner Feed and localised for every App Store storefront with .NET `CultureInfo` and `RegionInfo`. That is why it has 167 entries: the storefronts, not every country in the world.
 
-![919Apps](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/919apps.com_screenshot.png)
+[![919Apps](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/919apps.com_screenshot.png)](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule)
+
+*919Apps, [archived on the Wayback Machine](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule).*
 
 In 2026 the table was enriched following ISO 3166, ISO 4217, ISO 639, UN M49, Unicode CLDR and the IANA time zone database, then profiled, corrected and validated. Details in [methodology](docs/methodology.md).
 

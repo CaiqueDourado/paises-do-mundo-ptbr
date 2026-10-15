@@ -46,9 +46,11 @@ Cada coluna está descrita no **[dicionário de dados](docs/data-dictionary.pt-B
 
 ## Como foi construído
 
-A lista de países nasceu no **919Apps** (2021), um catálogo programático de 2,4 milhões de apps gerado a partir do Apple Enterprise Partner Feed e localizado para cada loja da App Store com `CultureInfo` e `RegionInfo` do .NET. Por isso são 167 entradas: as lojas da App Store, e não todos os países do mundo.
+A lista de países nasceu no **[919Apps](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule)** (2021), um catálogo programático de 2,4 milhões de apps gerado a partir do Apple Enterprise Partner Feed e localizado para cada loja da App Store com `CultureInfo` e `RegionInfo` do .NET. Por isso são 167 entradas: as lojas da App Store, e não todos os países do mundo.
 
-![919Apps](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/919apps.com_screenshot.png)
+[![919Apps](https://raw.githubusercontent.com/CaiqueDourado/CaiqueDourado/main/assets/919apps.com_screenshot.png)](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule)
+
+*919Apps, [versão arquivada no Wayback Machine](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule).*
 
 Em 2026 a tabela foi enriquecida seguindo ISO 3166, ISO 4217, ISO 639, ONU M49, Unicode CLDR e a base de fusos IANA, e depois perfilada, corrigida e validada. Detalhes em [methodology.md](docs/methodology.md) (em inglês).
 
