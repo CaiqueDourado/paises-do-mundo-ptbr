@@ -20,8 +20,10 @@
 
 ## Origin and quality
 
-The country list comes from a 2021 App Store catalog (167 storefronts). It was enriched following ISO, UN M49, Unicode CLDR and IANA standards, then validated: ISO codes, border symmetry, density, locale consistency. Eighteen classes of errors found in the original data were fixed and documented.
+The country list comes from [919Apps](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule), a 2021 App Store catalog by the author (167 storefronts). It was enriched following ISO, UN M49, Unicode CLDR and IANA standards, then validated: ISO codes, border symmetry, density, locale consistency. Eighteen classes of errors found in the original data were fixed and documented.
 
 Full data dictionary, methodology, quality report and the build/validation scripts: **https://github.com/CaiqueDourado/paises-do-mundo-ptbr**
 
 License: CC BY 4.0. Author: Caique Dourado.
+
+Same project: Brazilian e-commerce product catalog, 114.6 million offers from 7,179 stores: https://www.kaggle.com/datasets/caiquedourado/catalogo-produtos-ecommerce-brasil
