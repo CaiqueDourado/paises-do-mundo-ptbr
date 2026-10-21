@@ -81,4 +81,4 @@ Achou um erro? Abra uma issue com o país e a coluna.
 
 ## Autor
 
-**Caique Dourado**: 20 anos construindo crawlers, pipelines de dados e SEO programático em .NET e SQL Server. Outros datasets e bibliotecas em [github.com/CaiqueDourado](https://github.com/CaiqueDourado), como a [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text) (utilitários de texto em português) e o [BrCommerceKit](https://github.com/CaiqueDourado/BrCommerceKit).
+**Caique Dourado**: 20 anos construindo crawlers, pipelines de dados e SEO programático em .NET e SQL Server. Outros datasets e bibliotecas em [github.com/CaiqueDourado](https://github.com/CaiqueDourado), como a [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text) (utilitários de texto em português) e o [BrCommerceKit](https://github.com/CaiqueDourado/BrCommerceKit). Do mesmo projeto: [catalogo-produtos-ecommerce-brasil](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil), 114,6 milhões de ofertas de lojas brasileiras.

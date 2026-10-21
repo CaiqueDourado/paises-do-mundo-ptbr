@@ -99,4 +99,4 @@ Found an error? Open an issue with the country and the column.
 
 ## Author
 
-**Caique Dourado**: 20 years building crawlers, data pipelines and programmatic SEO in .NET and SQL Server. More datasets and libraries at [github.com/CaiqueDourado](https://github.com/CaiqueDourado), including [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text) (Brazilian Portuguese text utilities) and [BrCommerceKit](https://github.com/CaiqueDourado/BrCommerceKit).
+**Caique Dourado**: 20 years building crawlers, data pipelines and programmatic SEO in .NET and SQL Server. More datasets and libraries at [github.com/CaiqueDourado](https://github.com/CaiqueDourado), including [PtBr.Text](https://github.com/CaiqueDourado/PtBr.Text) (Brazilian Portuguese text utilities) and [BrCommerceKit](https://github.com/CaiqueDourado/BrCommerceKit). Same project: [catalogo-produtos-ecommerce-brasil](https://github.com/CaiqueDourado/catalogo-produtos-ecommerce-brasil), 114.6 million offers from Brazilian online stores.
