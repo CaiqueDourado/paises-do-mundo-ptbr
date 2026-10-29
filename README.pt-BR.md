@@ -44,6 +44,12 @@ Códigos (ISO, COI, DDI, domínios), nomes (português, inglês, nativo, bandeir
 
 Cada coluna está descrita no **[dicionário de dados](docs/data-dictionary.pt-BR.md)**, com tipo, percentual de nulos, exemplo, padrão de referência e origem.
 
+## Como um país é estruturado
+
+![O Brasil como um registro JSON aninhado](docs/img/country-json.png)
+
+Cada linha é plana (53 colunas), mas as colunas se agrupam. O registro acima é o Brasil reagrupado assim: códigos, nomes, geografia, política, moeda, formatos regionais e fusos, com as listas `|` separadas e cada uma das 10 fronteiras terrestres ligada de volta à própria linha para trazer o nome em português. O Brasil tem 211,9 milhões de habitantes em 8.515.767 km², uma moeda (BRL, R$) e 16 fusos IANA em 4 deslocamentos UTC. Registro completo: [docs/example-country.json](docs/example-country.json), gerado por [scripts/make_json.py](scripts/make_json.py) (`python scripts/make_json.py JP` para qualquer outro país).
+
 ## Como foi construído
 
 A lista de países nasceu no **[919Apps](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule)** (2021), um catálogo programático de 2,4 milhões de apps gerado a partir do Apple Enterprise Partner Feed e localizado para cada loja da App Store com `CultureInfo` e `RegionInfo` do .NET. Por isso são 167 entradas: as lojas da App Store, e não todos os países do mundo.

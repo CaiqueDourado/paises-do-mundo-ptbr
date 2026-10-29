@@ -57,6 +57,12 @@ GROUP BY un_region ORDER BY population_m DESC;
 
 Every column is described in the **[data dictionary](docs/data-dictionary.md)** ([pt-BR](docs/data-dictionary.pt-BR.md)), with type, null rate, example, standard and origin.
 
+## How a country is structured
+
+![Brazil as one nested JSON record](docs/img/country-json.png)
+
+Each row is flat (53 columns), but the columns fall into groups. The record above is Brazil regrouped that way: codes, names, geography, politics, money, locale and time, with the `|` lists split and each of its 10 land borders joined back to its own row to get the Portuguese name. Brazil has 211.9 million people on 8,515,767 km², one currency (BRL, R$) and 16 IANA time zones over 4 UTC offsets. Full record: [docs/example-country.json](docs/example-country.json), built by [scripts/make_json.py](scripts/make_json.py) (`python scripts/make_json.py JP` for any other country).
+
 ## How it was built
 
 The country list was born in **[919Apps](https://web.archive.org/web/20211203115104/https://919apps.com/lca/download-app-mhs-schedule)** (2021), a programmatic catalog of 2.4 million apps generated from the Apple Enterprise Partner Feed and localised for every App Store storefront with .NET `CultureInfo` and `RegionInfo`. That is why it has 167 entries: the storefronts, not every country in the world.

@@ -1,0 +1,147 @@
+{
+  "iso2": "BR",
+  "flag_emoji": "🇧🇷",
+  "names": {
+    "pt": "Brasil",
+    "official_pt": "República Federativa do Brasil",
+    "en": "Brazil",
+    "official_en": "Federative Republic of Brazil",
+    "native": "Brasil",
+    "capital_en": "Brasília",
+    "demonym_en": "Brazilian"
+  },
+  "codes": {
+    "iso2": "BR",
+    "iso3": "BRA",
+    "iso_numeric": "076",
+    "ioc": "BRA",
+    "calling_code": "+55",
+    "cctld": [
+      ".br"
+    ]
+  },
+  "geography": {
+    "un_region": "Americas",
+    "un_subregion": "South America",
+    "continent_group": "America",
+    "continent_subgroup": "South America",
+    "center": {
+      "latitude": -10.0,
+      "longitude": -55.0
+    },
+    "area_km2": 8515767,
+    "population_millions": 211.9,
+    "density_per_km2": 24.9,
+    "landlocked": false,
+    "border_count": 10,
+    "borders": [
+      {
+        "iso3": "ARG",
+        "name_pt": "Argentina"
+      },
+      {
+        "iso3": "BOL",
+        "name_pt": "Bolívia"
+      },
+      {
+        "iso3": "COL",
+        "name_pt": "Colômbia"
+      },
+      {
+        "iso3": "GUF",
+        "name_pt": null
+      },
+      {
+        "iso3": "GUY",
+        "name_pt": "Guiana"
+      },
+      {
+        "iso3": "PRY",
+        "name_pt": "Paraguai"
+      },
+      {
+        "iso3": "PER",
+        "name_pt": "Peru"
+      },
+      {
+        "iso3": "SUR",
+        "name_pt": "Suriname"
+      },
+      {
+        "iso3": "URY",
+        "name_pt": "Uruguai"
+      },
+      {
+        "iso3": "VEN",
+        "name_pt": "Venezuela"
+      }
+    ]
+  },
+  "politics": {
+    "independent": true,
+    "un_member": true,
+    "government_pt": "República presidencialista",
+    "state_form_pt": "Federal",
+    "memberships_pt": [
+      "G20",
+      "BRICS",
+      "CPLP",
+      "Mercosul"
+    ]
+  },
+  "money": {
+    "currencies": [
+      {
+        "code": "BRL",
+        "name_pt": "Real brasileiro",
+        "symbol": "R$"
+      }
+    ]
+  },
+  "language_and_locale": {
+    "primary_language": "pt",
+    "official_languages": [
+      {
+        "iso639_2": "por",
+        "name_en": "Portuguese"
+      }
+    ],
+    "locale": "pt-BR",
+    "writing_direction": "ltr",
+    "has_rtl_official_language": false,
+    "formats": {
+      "first_day_of_week": "sunday",
+      "time_format": "24h",
+      "short_date_pattern": "dd/MM/y",
+      "decimal_separator": "comma",
+      "grouping_separator": "period",
+      "measurement_system": "metric",
+      "paper_size": "A4",
+      "driving_side": "right"
+    }
+  },
+  "time": {
+    "timezones_iana": [
+      "America/Noronha",
+      "America/Belem",
+      "America/Fortaleza",
+      "America/Recife",
+      "America/Araguaina",
+      "America/Maceio",
+      "America/Bahia",
+      "America/Sao_Paulo",
+      "America/Campo_Grande",
+      "America/Cuiaba",
+      "America/Santarem",
+      "America/Porto_Velho",
+      "America/Boa_Vista",
+      "America/Manaus",
+      "America/Eirunepe",
+      "America/Rio_Branco"
+    ],
+    "utc_offset_count": 4,
+    "utc_offsets": "UTC-05:00 a UTC-02:00",
+    "observes_dst": false
+  },
+  "notes_pt": null
+}
